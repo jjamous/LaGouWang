@@ -7,34 +7,400 @@
     <style type="text/css">
         *{margin: 0;padding: 0;}
         p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li{margin: 0px;padding: 0px;}
+        li{list-style: none;}
+        a{text-decoration: none;color: black;}
 
         .mian{
             width: 1200px;
             margin: 0 auto;
-        }<!--页面整体大小所占区域1200px,上下间隙为0,左右自动-->
+        }/*设置公共版型*/
+        .fl{float: left;}
+        .fr{float: right;}
+        .clearFixed::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        img{
+            display: block;
+        }
         .header{
             height: 160px;
             background: red;
         }
         .header .h_top{
             height: 40px;
-            color: #32373e;
+            background: #32373e;
+        }
+        .header .h_top .topCon{
+            height: 40px;
+        }
+        .header .h_top .topCon .conLeft{
+            width: auto;
+            height: 40px;
+            line-height: 40px;
+        }
+        .header .h_top .topCon .conLeft .leftText1{
+            height: 40px;
+        }
+        .header .h_top .topCon .conLeft .leftText1 .logo{
+            font-size: 22px;
+            color: #00b38e;
+            margin-right: 32px;
+        }
+        .header .h_top .topCon .conLeft .leftText1 .city{
+            font-size: 12px;
+            color: #00b38e;
+            margin-right: 14px;
+        }
+        .header .h_top .topCon .conLeft .leftText1 .switchCity{
+            font-size: 12px;
+            color: #afb5c0;
+            margin-right: 36px;
+        }
+        .header .h_top .topCon .conLeft .ulList{
+            font-size: 14px;
+        }
+        .header .h_top .topCon .conLeft .ulList li{
+            float: left;
+            width: 70px;
+            height: 40px;
+            text-align: center;
+        }
+        .header .h_top .topCon .conLeft .ulList li a{
+            color: #a3b5a7;
+        }
+        .header .h_top .topCon .conRight{
+            width: auto;
+            height: 40px;
+        }
+        .header .h_top .topCon .conRight .ulList{
+            line-height: 40px;
+            font-size: 12px;
+            color: #93b5c0;
+        }
+        .header .h_top .topCon .conRight .ulList a{
+            color: #93b5c0;
+        }
+        .header .h_top .topCon .conRight .ulList li{
+            float: left;
+        }
+        .header .h_top .topCon .conRight .ulList .login{
+            background-image: url("img/sprite1.png");
+            background-size: 16px 16px;
+            background-repeat:no-repeat;
+            background-position: left center;
+            padding-left: 20px;
+            
+        }
+        .header .h_top .topCon .conRight .ulList .lagou{
+            background-image: url("img/sprite2.png");
+            background-size: 12.5px 18px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 18px;
+            margin-right: 20px;
         }
         .header .h_bottom{
             height: 120px;
-            color: #00b38e;
+            background: #00b38e;
         }
+        .header .h_bottom .bottomCon{
+            height: 120px;
+        }
+        .header .h_bottom .conLeft{
+            width: 566px;
+            height: 120px;
+            background-image: url(img/logo.png);
+            background-repeat: no-repeat;
+            background-size: 40% 100%;
+            position: relative;
+        }
+        .header .h_bottom .conLeft .imgBox{
+            position: absolute;
+            left: 230px;
+            top: 38px;
+        }
+        .header .h_bottom .conLeft .textBox{
+            position: absolute;
+            left: 230px;
+            top: 70px;
+            font-size: 12px;
+            color: #fff;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .header .h_bottom .conRight{
+            width: auto;
+            height: 120px;
+
+        }
+        .header .h_bottom .conRight .btnBox{
+            width: 100%;
+            height: 35px;
+            position: relative;
+            top: 50%;
+            margin-top: -16px;
+            color: #757575;
+        }
+        /*sear start*/
+        .sear{
+            height: 132px;
+            background-color: #f2f5f4;
+        }
+        .sear .searCon{
+            height: 102px;
+            padding-top: 30px;
+        }
+        .sear .searCon .search{
+            height: 47px;
+            width: 937px;
+            margin-left: 132px;
+        }
+        .sear .searCon .hotList{
+            margin-left: 132px;
+            height: 38px;
+            line-height: 38px;
+        }
+        .sear .searCon .hotList li{
+            float: left;
+            font-size: 12px;
+        }
+        .sear .searCon .hotList li a{
+            color: #00c1cc;
+            margin: 0 11px;
+        }
+        /*sear end*/
+        /*banner starte*/
+        .banner{
+            height: 430px;
+        }
+        .banner .bannerCon{
+            height: 430px;
+        }
+        .banner .bannerCon .conLeft{
+            height: auto;
+            width: 300px;
+            margin-top: 46px;
+        }
+        .banner .bannerCon .conLeft .banList{
+            font-size: 12px;
+        }
+        .banner .bannerCon .conLeft .banList li{
+            margin-bottom: 26px;
+        }
+        .banner .bannerCon .conLeft .banList li a{
+            color: #555555;
+            padding: 0px 13px;
+        }
+        .banner .bannerCon .conLeft .banList li a:first-child{
+            color: rgb(56, 56, 56);
+            font-size: 17px;
+            padding: 0px;
+        }
+        .banner .bannerCon .conRight{
+            height: 347px;
+            width: 840px;
+            margin-top: 46px;
+            position: relative;
+        }
+        .banner .bannerCon .conRight span{
+            height: 34px;
+            width: 22px;
+            font-size: 34px;
+            color: #141414;
+            font-family: '宋体';
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            display: none;
+        }
+        .banner .bannerCon .conRight:hover span{
+            display: block;
+        }
+        /*banner end*/
+        /*content start*/
+        .content .lineTop{
+            background-color: steelblue;
+            height: 53px;
+            line-height: 53px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .content .lineTop a{
+            color: #999999;
+            margin-right: 60px;
+        }
+        .content .lineTop a:first-child{
+            border-bottom: 2px solid #141414;
+            padding-bottom: 16px;
+        }
+        .content .lineMid{
+            background-color: violet;
+            height: 66px;
+        }
+        .content .lineMid span{
+            background-color: #e6e6e6;
+            color: #fff;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            border-radius: 50%;
+            margin-top: 22px;
+        }
+        /*content end*/
     </style>
 </head>
 <body>
     <div id="box">
         <div class="header">
-            <div class="h_top"></div>
-            <div class="h_bottom"></div>
+            <div class="h_top">
+                <div class="topCon mian clearFixed">
+                    <div class="conLeft fl">
+                        <div class="leftText1 fl">
+                            <a href="" class="logo">拉钩</a>
+                            <a href="" class="city">全国站</a>
+                            <a href="" class="switchCity">[切换城市]</a>
+                        </div>
+                        <ul class="ulList clearFixed fl">
+                            <li style="background: #24282c;"><a href="#" style="color: #fff;">首页</a></li>
+                            <li><a href="#">公司</a></li>
+                            <li><a href="#">校园</a></li>
+                            <li><a href="#">言职</a></li>
+                            <li><a href="#">课程</a></li>
+                        </ul>
+                    </div>
+                    <div class="conRight fr">
+                        <ul class="ulList clearFixed">
+                            <li class="login"><a href="" >登录</a></li>
+                            <li class="register" style="margin-right: 25px;"><span style="margin-left: 12px;margin-right: 12px;">|</span><a href="">注册</a></li>
+                            <li class="lagou"><a href="" style="color: #00b38e;">拉钩APP</a></li>
+                            <li><a href="" style="margin-right: 6px;">进入企业版</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="h_bottom">
+                <div class="bottomCon mian clearFixed">
+                    <div class="conLeft fl">
+                        <div class="imgBox img"><img src="img/text.png" alt="" width="334" height="31"></div>
+                        <div class="textBox">7555585家公司|67676767个职位在拉钩等你</div>
+                    </div>
+                    <div class="conRight fr">
+                        <div class="btnBox clearFixed">
+                            <input type="text" placeholder="输入手机号" class="fl" style="border: none;width: 160px;height: 100%;margin-right: 25px;padding-left: 10px;">
+                            <p class="fl" style="background-color:#fff;margin-right: 12px;">
+                                <input type="text" placeholder="验证码" style="width: 90px;height: 35px;border: none;padding-left: 10px;">
+                                <a href="" style="color: #00b38e;font-size: 13px;padding-right: 6px;"><span style="margin-left: 1px;margin-right: 3px;">|</span>获取</a>
+                            </p>
+                            <input type="submit" value="登录|注册" class="fl" style="height: 35px;width: 100px;border: 1px solid #ccefe7;background: transparent;margin-right: 10px;color: #fff;">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sear"></div>
-        <div class="banner"></div>
-        <div class="content"></div>
+        <div class="sear">
+            <div class="searCon mian">
+                <div class="search clearFixed">
+                    <input type="text" style="float: left;;width: 792px; height: 45px;border-width: 1px;font-size: 14px;border-color: #dde0de;border-style: solid;" placeholder="搜索公司、职位或地点" >
+                    <a href="" style="display: block;float: left;; width: 143px; height: 100%;font-size: 18px;line-height: 47px;text-align: center;background-color:#00a181;color: #fff;">搜索</a>
+                </div>
+                <ul class="hotList clearFixed">
+                    <li style="color: #778ab9;">热门搜索：</li>
+                    <li><a href="">24小时极速入职</a></li>
+                    <li><a href="">名企校招早班车</a></li>
+                    <li><a href="">Java面试</a></li>
+                    <li><a href="">架构设计</a></li>
+                    <li><a href="">数据分析</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">C++</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerCon mian clearFixed">
+                <div class="conLeft fl">
+                    <ul class="banList">
+                        <li >
+                            <a href="">技术</a>
+                            <a href="">Java</a>
+                            <a href="">PHP</a>
+                            <a href="">C++</a>
+                            <a href="">区块链</a>
+                            <span  style="float: right;font-family:'宋体';font-size: 13px;margin-top: 3px;color: #757575;">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="">产品</a>
+                            <a href="">产品总监</a>
+                            <a href="">产品经理</a>
+                            <span style="float: right;font-family:'宋体';font-size: 13px;margin-top: 3px;color: #757575;">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="">设计</a>
+                            <a href="">UI设计师</a>
+                            <a href="">交互设计</a>
+                            <a href="">网页设计师</a>
+                            <span style="float: right;font-family:'宋体';font-size: 13px;margin-top: 3px;color: #757575;">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="">运营</a>
+                            <a href="">新媒体运营</a>
+                            <a href="">编辑</a>
+                            <a href="">数据运营</a>
+                            <span style="float: right;font-family:'宋体';font-size: 13px;margin-top: 3px;color: #757575;">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="">市场</a>
+                            <a href="">市场营销</a>
+                            <a href="">市场推广</a>
+                            <a href="">市场策划</a>
+                            <span style="float: right;font-family:'宋体';font-size: 13px;margin-top: 3px;color: #757575;">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="">销售</a>
+                            <a href="">销售专员</a>
+                            <a href="">销售经理</a>
+                            <a href="">销售总监</a>
+                            <span style="float: right;font-family:'宋体';font-size: 13px;margin-top: 3px;color: #757575;">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="">职能</a>
+                            <a href="">HR</a>
+                            <a href="">行政</a>
+                            <a href="">审计</a>
+                            <span style="float: right;font-family:'宋体';font-size: 13px;margin-top: 3px;color: #757575;">&gt;</span>
+                        </li>
+                        <li>
+                            <a href="">游戏</a>
+                            <a href="">小游戏开发</a>
+                            <a href="">U3D</a>
+                            <a href="">游戏策划</a>
+                            <span style="float: right;font-family:'宋体';font-size: 13px;margin-top: 3px;color: #757575;">&gt;</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conRight fr">
+                    <div class="banImgBox">
+                        <img src="img/banner.JPG" alt="" style="width: 100%;height: 100%;">
+                    </div>
+                    <span style="left: 20px;">&lt;</span>
+                    <span style="right: 20px;">&gt;</span>
+                </div>
+            </div>
+        </div>
+        <div class="content mian">
+            <div class="line1">
+                <div class="lineTop">
+                    <a href="">24Hour热门</a>
+                    <a href="">最新职位</a>
+                </div>
+                <div class="lineMid  clearFixed">
+                    <span class="fl">?</span>
+                    <p class="fl" style="margin-top: 22px;">过去24小时,最多人看过的岗位在这里</p>
+                    <a href="" class="fl" style="margin-top: 22px;">我知道了</a>
+                </div>
+                <div class="line1Down"></div>
+            </div>
+            <div class="line2"></div>
+        </div>
         <div class="footer"></div>
     </div>
 </body>
