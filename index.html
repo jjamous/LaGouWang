@@ -220,7 +220,6 @@
         /*banner end*/
         /*content start*/
         .content .lineTop{
-            background-color: steelblue;
             height: 53px;
             line-height: 53px;
             border-bottom: 1px solid #e8e8e8;
@@ -234,7 +233,6 @@
             padding-bottom: 16px;
         }
         .content .lineMid{
-            background-color: violet;
             height: 66px;
         }
         .content .lineMid span{
@@ -245,6 +243,88 @@
             text-align: center;
             border-radius: 50%;
             margin-top: 22px;
+            margin-right: 14px;
+        }
+        .content .line1Down{
+            margin-bottom: 50px;
+        }
+        .content .line1Down .conUL li{
+            float: left;
+            margin-bottom: 13px;
+        }
+        .content .line1Down .conUL li:nth-child(2){
+            margin: 0 13px;
+        }
+        .content .line1Down .conUL li .conBox{
+            width: 355px;
+            height: 200px;
+            border: 1px solid #eaeeed;
+            padding: 0 17px;
+        }
+        .content .line1Down .conUL li .conBox .job{
+            margin-top: 24px;
+        }
+        .content .line1Down .conUL li .conBox .job .jobText{
+            font-size: 18px;
+            margin-right: 8px;
+        }
+        .content .line1Down .conUL li .conBox .job .jobTime{
+            color: #9999b2;
+            margin-right: 8px;
+            
+        }
+        .content .line1Down .conUL li .conBox .job .jobImg{
+            display: inline;
+        }
+        .content .line1Down .conUL li .conBox .job .money{
+            font-size: 12px;
+            color: #fa6041;
+            margin-left: 70px;
+        }
+        .content .line1Down .conUL li .conBox .condition{
+            font-size: 16px;
+            color: #9999b2;
+            margin: 13px 0px;
+        }
+        .content .line1Down .conUL li .conBox .industry{
+            margin-top: 16px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #9999b2;
+        }
+        .content .line1Down .conUL li .conBox .industry span{
+            font-size: 12px;
+            color: #9999b2;
+            border: 1px solid #9999b2;
+            padding: 8px 25px;
+            border-radius: 5px;
+            margin-right: 12px;
+        }
+        .content .line1Down .conUL li .conBox .company{
+            margin-top: 18px;
+        }
+        .content .line1Down .conUL li .conBox .company .logo{
+            width: 40px;
+            height: 40px;
+
+        }
+        .content .line1Down .conUL li .conBox .company .information{
+            margin-left: 12px;
+            font-size: 14px;
+        } 
+        .content .line1Down .conUL li .conBox .company .information p{
+            margin: 3px 0;
+
+        }
+        .content .line1Down .more{
+            width: 388px;
+            height: 42px;
+            border: 1px solid #00b38a;
+            text-align: center;
+            color: #00b38a;
+            margin: 0 auto;
+        }
+        .content .line1Down .more a{
+            line-height: 42px;
         }
         /*content end*/
     </style>
@@ -394,12 +474,266 @@
                 </div>
                 <div class="lineMid  clearFixed">
                     <span class="fl">?</span>
-                    <p class="fl" style="margin-top: 22px;">过去24小时,最多人看过的岗位在这里</p>
-                    <a href="" class="fl" style="margin-top: 22px;">我知道了</a>
+                    <p class="fl" style="margin-top: 22px;font-size: 12px;color: #b8b5b5;margin-right: 55px;">过去24小时,最多人看过的岗位在这里</p>
+                    <a href="" class="fl" style="margin-top: 22px;font-size: 12px;color: #00b38e;">我知道了</a>
                 </div>
-                <div class="line1Down"></div>
+                <div class="line1Down">
+                    <ul class="conUL mian clearFixed">
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="conUL mian clearFixed">
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="conUL mian clearFixed">
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="conBox">
+                                <p class="job">
+                                    <span class="jobText">Java开发工程师</span>
+                                    <span class="jobTime">[10:35]</span>
+                                    <img class="jobImg" src="img/icon_chat.png" alt="">
+                                    <span class="money">10K-15K</span>
+                                </p>
+                                <p class="condition">
+                                    <span>经验5-10年</span>
+                                    <span>/</span>
+                                    <span>大专</span>
+                                </p>
+                                <p class="industry">
+                                    <span>电商</span>
+                                    <span>移动互联网</span>
+                                </p>
+                                <div class="company clearFixed">
+                                    <img src="img/con1.png" alt="" class="logo fl">
+                                    <div class="information fl">
+                                        <p class="name">假面科技</p>
+                                        <p style="color: #979696;">社交/B轮/上海</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="more">
+                        <a href="">查看更多</a>
+                    </p>
+                </div>
             </div>
-            <div class="line2"></div>
+            <div class="line2">
+                <div class="lineTop">
+                    <a href="">互联网热门公司榜</a>
+                </div>
+                <div class="lineMid  clearFixed">
+                    <span class="fl">?</span>
+                    <p class="fl" style="margin-top: 22px;font-size: 12px;color: #e6e6e6;margin-right: 55px;">互联网行业实力热门企业</p>
+                    <a href="" class="fl" style="margin-top: 22px;font-size: 12px;color: #00b38e;">我知道了</a>
+                </div>
+
+            </div>
         </div>
         <div class="footer"></div>
     </div>
